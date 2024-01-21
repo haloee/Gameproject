@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { Component, EventEmitter, Input, Output } from '@angular/core';
 
 @Component({
   selector: 'app-board',
@@ -6,5 +6,7 @@ import { Component } from '@angular/core';
   styleUrls: ['./board.component.css']
 })
 export class BoardComponent {
-
+  @Input() board!: string[][];
+  @Output() cellClick: EventEmitter<any> = new EventEmitter<any>();
+  
 }

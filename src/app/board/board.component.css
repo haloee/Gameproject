@@ -1,0 +1,30 @@
+/* board.component.css */
+:host {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 5px; /* Távolság a cellák között */
+    max-width: 300px; /* Maximum szélesség, ami megakadályozza a túlzott elterjedést a kijelzőn */
+    margin: 0 auto; /* Középre igazítás */
+  }
+  
+  .cell {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 50px;
+    background-color: #fff;
+    border: 1px solid #ccc;
+    cursor: pointer;
+    font-size: 1.2em;
+    color: #333;
+    transition: background-color 0.3s; /* Tranzíció a háttérszínre */
+  }
+  
+  .cell:hover {
+    background-color: #f0f0f0; /* Háttérszín megváltoztatása a hover eseményre */
+  }
+  
+  .cell.selected {
+    background-color: #e0e0e0; /* Háttérszín megváltoztatása a kijelölt cellára */
+  }
+  
