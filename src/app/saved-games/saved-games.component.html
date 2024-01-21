@@ -1,1 +1,17 @@
-<p>saved-games works!</p>
+<!-- saved-games.component.html -->
+<div>
+    <h2>Saved Games</h2>
+    <div>
+      <label for="filterInput">Filter by Name:</label>
+      <input type="text" id="filterInput" [(ngModel)]="filterTerm" />
+      <button (click)="applyFilter()">Apply Filter</button>
+    </div>
+    <ul>
+      <li *ngFor="let game of savedGames">
+        {{ game.name }}
+        <button (click)="loadGame(game.id)">Load</button>
+        <button (click)="deleteSavedGame(game.id)">Delete</button>
+      </li>
+    </ul>
+  </div>
+  

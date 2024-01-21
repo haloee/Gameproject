@@ -1,0 +1,23 @@
+/* saved-games.component.css */
+:host {
+    max-width: 600px; /* Maximum szélesség a túl széles kijelzők elkerülésére */
+    margin: 0 auto; /* Középre igazítás */
+  }
+  
+  label {
+    margin-right: 10px; /* Szükség esetén állítsd be a megfelelő margin értéket */
+  }
+  
+  input, button {
+    margin-bottom: 10px; /* Szükség esetén állítsd be a megfelelő margin értéket */
+  }
+  
+  ul {
+    list-style-type: none; /* Lista jelek eltávolítása */
+    padding: 0;
+  }
+  
+  li {
+    margin-bottom: 10px; /* Szükség esetén állítsd be a megfelelő margin értéket */
+  }
+  
