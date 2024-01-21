@@ -1,4 +1,5 @@
-import { Component } from '@angular/core';
+// save-board.component.ts
+import { Component, Output, EventEmitter } from '@angular/core';
 
 @Component({
   selector: 'app-save-board',
@@ -6,5 +7,14 @@ import { Component } from '@angular/core';
   styleUrls: ['./save-board.component.css']
 })
 export class SaveBoardComponent {
+  @Output() saveBoard: EventEmitter<string> = new EventEmitter<string>();
 
+  boardName: string = '';
+
+  onSave(): void {
+    if (this.boardName.trim() !== '') {
+      this.saveBoard.emit(this.boardName);
+      this.boardName = ''; // Clear the input after saving
+    }
+  }
 }

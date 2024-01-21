@@ -8,6 +8,7 @@ import { CellComponent } from './cell/cell.component';
 import { GameComponent } from './game/game.component';
 import { SaveBoardComponent } from './save-board/save-board.component';
 import { SavedGamesComponent } from './saved-games/saved-games.component';
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 
 @NgModule({
   declarations: [
@@ -20,7 +21,8 @@ import { SavedGamesComponent } from './saved-games/saved-games.component';
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    BrowserAnimationsModule
   ],
   providers: [],
   bootstrap: [AppComponent]

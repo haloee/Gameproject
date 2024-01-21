@@ -1,1 +1,10 @@
-<p>save-board works!</p>
+<!-- save-board.component.html -->
+<div>
+    <mat-form-field class="field">
+        <mat-label for="boardName"></mat-label>
+        <input type="text" matInput id="boardName" [(ngModel)]="boardName" placeholder="your board name">
+        
+    </mat-form-field>
+    <button mat-raised-button (click)="onSave()" color="accent" class="save">Save Board</button>
+  </div>
+  
