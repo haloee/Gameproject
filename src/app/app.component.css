@@ -1,0 +1,32 @@
+/* src/app/app.component.css */
+body {
+    font-family: 'Arial', sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    background-color: burlywood;
+    
+  }
+  
+  h1 {
+    text-align: center;
+  }
+  
+  /* Add your additional styling here */
+  .mat-toolbar{
+    background-color: aqua;
+    height: 50px;
+  }
+  .example-spacer{
+    flex: 1 1 auto;
+  }
+  .pagename{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transform: translate(600%, -10%);
+    position:absolute;
+
+  }
