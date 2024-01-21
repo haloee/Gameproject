@@ -1,0 +1,23 @@
+/* cell.component.css */
+:host {
+    display: inline-block;
+    width: 30px; /* Állítsd be a megfelelő szélességet */
+    height: 30px; /* Állítsd be a megfelelő magasságot */
+    margin: 0;
+    padding: 0;
+    text-align: center;
+    line-height: 30px;
+    font-size: 1.2em;
+    cursor: pointer;
+    background-color: #fff;
+    border: 1px solid #ccc;
+  }
+  
+  :host(.x) {
+    color: #1E88E5; /* Az X színének beállítása */
+  }
+  
+  :host(.o) {
+    color: #FFC107; /* Az O színének beállítása */
+  }
+  
