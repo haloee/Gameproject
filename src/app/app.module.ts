@@ -7,6 +7,7 @@ import { BoardComponent } from './board/board.component';
 import { CellComponent } from './cell/cell.component';
 import { GameComponent } from './game/game.component';
 import { SaveBoardComponent } from './save-board/save-board.component';
+import { SavedGamesComponent } from './saved-games/saved-games.component';
 
 @NgModule({
   declarations: [
@@ -14,7 +15,8 @@ import { SaveBoardComponent } from './save-board/save-board.component';
     BoardComponent,
     CellComponent,
     GameComponent,
-    SaveBoardComponent
+    SaveBoardComponent,
+    SavedGamesComponent
   ],
   imports: [
     BrowserModule,
