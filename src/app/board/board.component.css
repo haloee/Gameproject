@@ -2,8 +2,8 @@
 :host {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
-    gap: 5px; /* Távolság a cellák között */
-    max-width: 300px; /* Maximum szélesség, ami megakadályozza a túlzott elterjedést a kijelzőn */
+    gap: 1px; /* Távolság a cellák között */
+    max-width: 600px; /* Maximum szélesség, ami megakadályozza a túlzott elterjedést a kijelzőn */
     margin: 0 auto; /* Középre igazítás */
   }
   

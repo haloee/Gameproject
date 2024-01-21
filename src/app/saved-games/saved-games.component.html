@@ -2,15 +2,17 @@
 <div>
     <h2>Saved Games</h2>
     <div>
-      <label for="filterInput">Filter by Name:</label>
-      <input type="text" id="filterInput" [(ngModel)]="filterTerm" />
-      <button (click)="applyFilter()">Apply Filter</button>
+      <mat-form-field class="field">
+        <mat-label for="filterInput">Filter by name:</mat-label>
+        <input type="text" matInput id="filterInput" [(ngModel)]="filterTerm">
+      </mat-form-field>
+      <button (click)="applyFilter()" mat-raised-button color="accent" class="filter">Apply Filter</button>
     </div>
     <ul>
       <li *ngFor="let game of savedGames">
         {{ game.name }}
-        <button (click)="loadGame(game.id)">Load</button>
-        <button (click)="deleteSavedGame(game.id)">Delete</button>
+        <button (click)="loadGame(game.id)" mat-raised-button color="accent">Load</button>
+        <button (click)="deleteSavedGame(game.id)" mat-raised-button color="accent">Delete</button>
       </li>
     </ul>
   </div>

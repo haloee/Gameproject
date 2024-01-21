@@ -20,4 +20,9 @@
   li {
     margin-bottom: 10px; /* Szükség esetén állítsd be a megfelelő margin értéket */
   }
-  
+  .field{
+    transform: translate(350%,30%);
+  }
+  .filter{
+    transform: translate(635%,55%);
+  }

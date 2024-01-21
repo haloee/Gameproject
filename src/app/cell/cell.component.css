@@ -1,15 +1,15 @@
 /* cell.component.css */
 :host {
     display: inline-block;
-    width: 30px; /* Állítsd be a megfelelő szélességet */
-    height: 30px; /* Állítsd be a megfelelő magasságot */
+    width: 60px; /* Állítsd be a megfelelő szélességet */
+    height: 60px; /* Állítsd be a megfelelő magasságot */
     margin: 0;
     padding: 0;
     text-align: center;
     line-height: 30px;
     font-size: 1.2em;
     cursor: pointer;
-    background-color: #fff;
+    background-color:bisque;
     border: 1px solid #ccc;
   }
   
