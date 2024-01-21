@@ -1,1 +1,12 @@
-<p>game works!</p>
+
+
+  <!-- game.component.html -->
+  <div class="game">
+    <div class="result">
+      <h2>{{ getGameResultMessage() }}</h2>
+    </div>
+    <app-board [board]="board" (cellClick)="handleCellClick($event)"></app-board>
+    <app-save-board (saveBoard)="saveBoard($event)"></app-save-board>
+    <button *ngIf="winner || isBoardFull()" (click)="resetGame()">Play Again</button>
+  </div>
+  
