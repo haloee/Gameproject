@@ -1,4 +1,4 @@
-// save-board.component.ts
+
 import { Component, Output, EventEmitter } from '@angular/core';
 
 @Component({
@@ -14,7 +14,7 @@ export class SaveBoardComponent {
   onSave(): void {
     if (this.boardName.trim() !== '') {
       this.saveBoard.emit(this.boardName);
-      this.boardName = ''; // Clear the input after saving
+      this.boardName = ''; 
     }
   }
 }

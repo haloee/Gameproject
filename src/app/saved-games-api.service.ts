@@ -1,4 +1,4 @@
-// saved-games-api.service.ts
+
 import { Injectable } from '@angular/core';
 import { HttpClient, HttpParams } from '@angular/common/http';
 import { Observable } from 'rxjs';
@@ -7,7 +7,7 @@ import { Observable } from 'rxjs';
   providedIn: 'root'
 })
 export class SavedGamesApiService {
-  private apiUrl = 'http://localhost:5000'; // Replace with your actual API endpoint
+  private apiUrl = 'http://localhost:5000'; 
 
   constructor(private http: HttpClient) {}
 

@@ -39,8 +39,7 @@ export class SavedGamesComponent implements OnInit {
     this.savedGamesApiService.loadSavedGame(gameId)
       .subscribe(
         data => {
-          // Navigate to the game page with the loaded board state
-          // Example: this.router.navigate(['/game', { board: data.board }]);
+
         },
         error => console.error('Error loading saved game:', error)
       );

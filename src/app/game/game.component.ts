@@ -23,15 +23,15 @@ export class GameComponent implements OnInit {
     }
   }
   isBoardEmpty(): boolean {
-    // Check if the board is empty
+    
     for (let i = 0; i < 3; i++) {
       for (let j = 0; j < 3; j++) {
         if (this.board[i][j] !== '') {
-          return false; // Board is not empty
+          return false; 
         }
       }
     }
-    return true; // Board is empty
+    return true; 
   }
   
   ngOnInit(): void {

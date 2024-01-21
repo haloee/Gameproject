@@ -1,4 +1,4 @@
-/* src/app/app.component.css */
+
 body {
     font-family: 'Arial', sans-serif;
     display: flex;
@@ -14,7 +14,7 @@ body {
     text-align: center;
   }
   
-  /* Add your additional styling here */
+ 
   .mat-toolbar{
     background-color: aqua;
     height: 50px;
